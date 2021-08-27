@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Oswald&family=Raleway&family=Roboto&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.purpole{
+  background-color: #856088;
 }
+.carousel-images{
+width: 70%;
+height: 400px;
+position: absolute;
+left: 50%;
+top: 50%;
+background-size: cover;
+background-image: url(./Images/goo12.jpg);
+transform: translate(-50%,-50%);
+animation: carousel 12s infinite  linear ; 
+/*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+}
+@keyframes carousel{
+0%{background-image: url(./Images/goo12.jpg);}
+25%{background-image: url(./Images/good13.jpg);}
+50%{background-image: url(./Images/good19.jpg);}
+75%{background-image: url(./Images/good20.jpg);}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+/*it is Menu.js*/
+.header{
+ 
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width:100%;
+  background-color: #856088;
+}
+.logo{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  padding: 0% 2%;
+  margin-left: 2%;
+  color: #fff;
+}
+.navbar{
+  flex:1;
+  margin-top: 25px;
+ text-align: right;
+
+}
+.navbar a{
+ 
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-around;
+  padding: 1% 2%;
+
+
+}
+.navbar a:hover{
+  background-color: #F26B8A;
+ 
+}
+.navbar a:active{
+  border: 1px solid #fff ;
+}
+.icons{
+  display: none;
+}
+@media (max-width:700px) {
+ 
+ .logo{
+  font-family: 'Raleway', sans-serif;
+  padding: 0% 1%;
+  margin-left: 2%;
+  color:#fff;
+  font-size: 12px;
+  margin-right: 10%;
+ }
+ .navbar a{
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+ }
+ .navbar a:hover{
+  background-color:#856088;
+ }
+ .navbar{
+  position: absolute;
+  background: #F26B8A;
+  height: 100vh;
+  margin-top: 0%;
+  width:200px;
+  right:-200px;
+  text-align: left;
+  z-index: 2;
+  transition: 1s;
+ }
+.icons{
+    display: block;
+          color: #fff;
+          margin-top: 10px;
+          font-size: 22px;
+          cursor: pointer;
+          position:absolute;
+          right: 3%;
+         
+  }
+  /* caoursel */
+  .carousel-images{
+    width: 85%;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    background-size: cover;
+    background-image: url(./Images/goo12.jpg);
+    transform: translate(-50%,-50%);
+    animation: carousel 12s infinite  linear ; 
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    }
+  }
+/*-this is About.js-*/
+.main{
+  margin-top: 600px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.main h1{
+  text-align: center;
+  font-size: 2.5rem;
 }
+.main h1::after{
+  content: " "; 
+  width:0%;
+  height:2px;
+  background:#856088;
+  width: 20%; 
+  display:block; 
+  margin: auto; 
+}
+.row{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 700px;
+ /* margin:0 auto; */
+  justify-content: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.img{
+ /* margin-top: 50px;
+  width: 220%;
+  height: 200px;
+  background-image: url(./Images/avatar.png);
+
+  background-size: cover;
+  border-radius: 90%;
+  display: block;
+  padding: 20px;
+  top:0 */
+  position: absolute;
+  width: 15%;
+  min-width: auto;
+max-width: 50vh;
+  height: 30%;
+  background-image: url(./Images/avatar.png);
+  background-size: cover;
+  border-radius: 90%;
+  padding: 20px;
+ margin-right: 30%;
+
+}
+@media(max-width:700px){
+
+}
+.intro p{
+
+  position:absolute;
+  min-width:30%;
+   width: 40%;
+max-height: 40%;
+overflow-y: scroll;
+  font-size: 1 rem;
+  color: #333; 
+  max-lines: 8px;
+line-height: 1.5rem;
+
+}
+.about-details{
+  
+display: flex;
+
+}
+.col{
+
+overflow: hidden;
+  width: 100%;
+  height: 400px;
+ margin-top: 500px;
+ margin-right: 20px;
+ margin-left: 40px;
+ position: relative;
+}
+.col img{
+  border: 2px solid #856088;
+  border-radius: 10px;
+}
+.col:hover{
+  box-shadow: 0  0 20px 2px rgba(0, 0, 0, 0.2);
+}
+.layor{
+  cursor: pointer;
+  background:transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  color: #856088;
+ 
+}
+.layor2{
+  cursor: pointer;
+  background:transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  color: #856088;
+ 
 }
