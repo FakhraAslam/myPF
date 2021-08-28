@@ -7,6 +7,17 @@ import {
 } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Menu=()=>{
+    
+        function vanish(){
+            if (window.innerWidth < 700) {
+            if((document.getElementsByClassName("menus"))!=null){
+                document.getElementById("navLinks").style.right = "-200px";
+            }
+        }
+        }
+      
+ 
+    
 function showMenu() {
     if((document.getElementById("navLinks"))!=null)
     {
@@ -26,17 +37,17 @@ function hideMenu() {
             <div className="logo" >
                 <h3>Fakhra.PortFolio</h3>
             </div>
-            <div className="navbar" id="navLinks">
+            <div className="navbar , mobilenavbar" id="navLinks">
             {/* <i class="fa fa-times" onclick="hideMenu()"></i> */}
             <FontAwesomeIcon className="icons" icon="times" onClick={hideMenu}/>
                 <div>
                
-                     <Link to="/home">Home </Link> 
-                    <Link to="/about">About </Link>
-                    <Link to="/work">Work </Link>
-                    <Link to="/skills">Skills </Link>
-                    <Link to="/experience">Experience </Link>
-                    <Link to="/contact">Contact </Link>
+                    <Link className="menus" onClick={vanish}  to="/home">Home </Link> 
+                    <Link className="menus" onClick={vanish} to="/about">About </Link>
+                    <Link className="menus" onClick={vanish} to="/work">Work </Link>
+                    <Link className="menus" onClick={vanish} to="/skills">Skills </Link>
+                    <Link className="menus" onClick={vanish} to="/experience">Experience </Link>
+                    <Link className="menus" onClick={vanish} to="/contact">Contact </Link>
                   
                 </div>
                

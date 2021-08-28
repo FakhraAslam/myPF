@@ -35,8 +35,8 @@ const About = () => {
 
                 </div>
             </div>
-            {/*other about me details */}
-            <div className="about-details">
+            {/*this is code of about me further details */}
+            {/* <div className="about-details">
 
                 <div className="col">
                     <img src={planeSurface} alt="" id="aboutDetailsId" />
@@ -89,7 +89,7 @@ const About = () => {
                             <li>introvert</li>
                         </ul>
                     </div></div>
-            </div>
+            </div> */}
 
         </div>
 
