@@ -9,7 +9,9 @@ import Skills from './Components/Skills'
 import Contact from './Components/Contact'
 import Work from './Components/Work'
 import Home from "./Components/Home";
+
 import "./Components/Fontawsomeicons";
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -26,7 +28,7 @@ function App() {
         <Route path="/experience" component={Experience} />
         <Route path="/contact" component={Contact} />
       </Switch>
-
+<Footer/>
     </div>
   );
 }

@@ -25,7 +25,10 @@ const About = () => {
 // }
 
 function displayDetails(){
-    var x = document.getElementById("aboutdetailsListId");
+    var x = document.getElementById("education");
+    // var y = document.getElementById("hobies");
+    // var z = document.getElementById("strength");
+    // var a = document.getElementById("weekness");
     
     if(x!=null){
         if (x.style.display === "none") {
@@ -34,6 +37,7 @@ function displayDetails(){
             x.style.display = "none";
           }
     }
+ 
 }
 
 
@@ -53,7 +57,7 @@ function displayDetails(){
             </div>
             <div className="main-details" >
                 <div className="grids edu" onClick={displayDetails} ><p>Education</p>
-                    <div className="" id="aboutdetailsListId">
+                    <div className="aboutdetailsListClass" id="education">
                         <ul>
                             <li>Metric Bio Sci.</li>
                             <li>Inter  ICS </li>
@@ -61,7 +65,7 @@ function displayDetails(){
                         </ul>
                     </div></div>
                 <div className="grids hobies" onClick={displayDetails} ><p>Hobies</p>
-                    <div className="" id="aboutdetailsListId">
+                    <div className="aboutdetailsListClass" id="hobies">
                         <ul>
                             <li>urdu Fiction Writing </li>
                             <li>Urdu Lit. Reading</li>
@@ -69,7 +73,7 @@ function displayDetails(){
                         </ul>
                     </div></div>
                 <div className="grids Strengths" onClick={displayDetails}><p>Strengths</p>
-                    <div className="" id="aboutdetailsListId">
+                    <div className="aboutdetailsListClass" id="strengths">
                         <ul>
                             <li>Dedicated</li>
                             <li>Coperative</li>
@@ -77,7 +81,7 @@ function displayDetails(){
                         </ul>
                     </div></div>
                 <div className="grids weekness" onClick={displayDetails} ><p>Weakness</p>
-                    <div className="" id="aboutdetailsListId">
+                    <div className="aboutdetailsListClass" id="weekness">
                         <ul>
                             <li>introvert</li>
                         </ul>
