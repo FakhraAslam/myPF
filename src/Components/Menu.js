@@ -11,7 +11,7 @@ const Menu=()=>{
         function vanish(){
             if (window.innerWidth < 700) {
             if((document.getElementsByClassName("menus"))!=null){
-                document.getElementById("navLinks").style.right = "-200px";
+                document.getElementById("navLinks").style.display = "none";
             }
         }
         }
@@ -21,6 +21,7 @@ const Menu=()=>{
 function showMenu() {
     if((document.getElementById("navLinks"))!=null)
     {
+        document.getElementById("navLinks").style.display = "block";
         document.getElementById("navLinks").style.right = "0";
     }
 }
@@ -28,7 +29,7 @@ function hideMenu() {
     
     if((document.getElementById("navLinks"))!==null)
     {
-        document.getElementById("navLinks").style.right = "-200px";
+        document.getElementById("navLinks").style.display = "none";
     }
    
 }
