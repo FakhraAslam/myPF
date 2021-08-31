@@ -6,6 +6,10 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
+
+}
+html,body{
+  overflow-x: hidden;
 }
 .purpole{
   background-color: #856088;
