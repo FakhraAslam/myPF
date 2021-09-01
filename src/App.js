@@ -19,13 +19,12 @@ function App() {
   return (
     <div className="">
       <Menu />
-      {/* <Carousel />  */}
       <Switch>
         <Route exact path="/home" component={Carousel} />
         <Route path="/about" component={About} />
-        <Route path="/work" component={Work} />
+        {/* <Route path="/work" component={Work} /> */}
         <Route path="/skills" component={Skills} />
-        <Route path="/experience" component={Experience} />
+        {/* <Route path="/experience" component={Experience} /> */}
         <Route path="/contact" component={Contact} />
       </Switch>
 <Footer/>

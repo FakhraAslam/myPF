@@ -42,7 +42,7 @@ function displayDetails(){
 
 
     return (
-        <div>
+        <div className="sec">
             <div className="main">
                 <h1>ABOUT ME </h1>
                 <div className="row">

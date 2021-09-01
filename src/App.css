@@ -7,9 +7,12 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 -webkit-tap-highlight-color: transparent;
+
 }
+
 html,body{
   overflow-x: hidden;
+
 }
 .purpole{
   background-color: #856088;
@@ -23,8 +26,16 @@ top: 50%;
 background-size: cover;
 background-image: url(./Images/goo12.jpg);
 transform: translate(-50%,-50%);
-animation: carousel 12s infinite  linear ; 
+animation: carousel 20s infinite  linear ; 
 /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+}
+.headC{
+ 
+  position: relative;
+  
+ width: 100%;
+ height: 600px;
+
 }
 @keyframes carousel{
 0%{background-image: url(./Images/goo12.jpg);}
@@ -205,7 +216,7 @@ display: block;
     margin: 10% 20% 0% 10%;
     
   } 
-
+  
 }
 
 /* .about-details{
@@ -311,11 +322,139 @@ color: #856088;
 } 
 /* __________footer_____________________ */
 .footer-main{
-  margin-top: 100%;
-   padding: 1rem;
-    background-color: rgb(63, 60, 50);
-     position: relative; 
-     bottom: 0; 
-    
-     left: 0; 
-     width: 100%; }
+
+      padding: 1rem;
+      background-color: rgb(63, 60, 50);
+      position: relative; 
+      bottom: 0; 
+      left: 0; 
+      height: 50px;
+      width: 100%;
+     }
+.brandIcons{
+display: flex;
+justify-content: center;
+     }
+.brand_icons{
+  margin-left: 20px;
+  display: block;
+  font-size: 23px;
+  cursor: pointer;
+  padding: 20px;
+}
+.fb{ color:royalblue;}
+.yt{ color:red;}
+.likn{color:white;}
+.github{color:white;}
+
+.brand_icons:hover{
+  box-shadow: 0  0 20px 2px rgba(0, 0, 0, 0.2);
+}
+@media(max-width:700px){
+  .brand_icons{
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 15px;
+  }
+ 
+}
+/* skills---------------------- */
+.main-techs{
+display: grid;
+grid-template-rows: 200px 200px 200px;
+grid-template-columns:300px 50px 200px ;
+justify-content: center;
+grid-row-gap: 10px;
+}
+.one{
+  background-color: rgb(36, 148, 129);
+  border-radius: 90%;
+  width: 50%;
+  height: 60%;
+  justify-self: center;
+  align-self: center;
+  
+}
+.two{
+  background-color: brown;
+}
+.three{
+  background-color: cadetblue;
+}
+.four{
+  background-color: rgb(151, 228, 88);
+  border-radius: 90%;
+  width: 50%;
+  height: 60%;
+  justify-self: center;
+  align-self: center;
+}
+.five{
+  background-color: yellow;
+}
+.six{
+  background-color: purple;
+}
+.seven{
+  background-color: rgb(236, 80, 53);
+  border-radius: 90%;
+  width: 50%;
+  height: 60%;
+  justify-self: center;
+  align-self: center;
+}
+.eight{
+  background-color: pink;
+}
+.nine{
+  background-color: red;
+}
+.verticalLine {
+margin-left: 15px;
+  border-left: 2px solid #c2bfbf;
+  
+}
+.tech p{
+  color: #fff;
+ text-align: center;
+margin-top: 40px;
+font-size: 1.2rem;
+}
+.skills h3{
+  color: #F26B8A;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+.skills hr{
+  width: 40%;
+ text-align: center;
+ border: 0; border-top: 2px solid #c2bfbf;
+}
+.main-techs-parent{
+  background-color: rgb(228, 235, 233);
+}
+.tech-details p{
+ width: 100%;
+}
+.format-skills{
+font-style: italic;
+font-weight: bold;
+}
+@media(max-width:700px){
+  .main-techs{
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns:150px 20px 200px ;
+    justify-content: center;
+    grid-row-gap: 10px;
+    }
+    .tech-details p{
+      width: 80%;
+     }
+ .smallscr{
+  width: 80%;
+  height: 60%;
+ }
+}

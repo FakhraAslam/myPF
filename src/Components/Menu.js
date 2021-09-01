@@ -45,9 +45,9 @@ function hideMenu() {
                
                     <Link className="menus" onClick={vanish}  to="/home">Home </Link> 
                     <Link className="menus" onClick={vanish} to="/about">About </Link>
-                    <Link className="menus" onClick={vanish} to="/work">Work </Link>
+                    {/* <Link className="menus" onClick={vanish} to="/work">Work </Link> */}
                     <Link className="menus" onClick={vanish} to="/skills">Skills </Link>
-                    <Link className="menus" onClick={vanish} to="/experience">Experience </Link>
+                    {/* <Link className="menus" onClick={vanish} to="/experience">Experience </Link> */}
                     <Link className="menus" onClick={vanish} to="/contact">Contact </Link>
                   
                 </div>
