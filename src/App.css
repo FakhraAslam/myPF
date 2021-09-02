@@ -260,12 +260,15 @@ overflow: hidden;
  
 } */
  .main-details{
-  max-width: 2000px;
+
   grid-auto-rows: 200px;
    margin-top: 40px;
 display: grid;
 grid-template-rows: 200px ;
+/* these thress lines are centring the grid */
 justify-content: center;
+width: 80%;
+margin: auto;
 grid-template-columns: repeat(auto-fill, minmax(200px,200px)); 
 /* grid-template-columns: minmax(200px, 1fr);
 grid-template-columns: fit-content(80%); */
@@ -274,7 +277,6 @@ grid-template-columns: fit-content(80%); */
 grid-template-columns: repeat(auto-fill, minmax(min-content, 200px)); */
 height: 100%;
 padding: 10px;
-margin-left: 10%;
 grid-gap: 30px;
 }
 .edu{

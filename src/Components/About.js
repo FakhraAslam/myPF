@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import $ from "jquery";
 import planeSurface from "../Images/planeSurface.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "aos/dist/aos.css";
+import AOS from "aos";
+
 const About = () => {
 //     var elementIsClicked = false;
 //   var element = document.getElementById('eduuuuuuu');
@@ -23,7 +26,12 @@ const About = () => {
 //          // do what you want to do here
 //    }, false);
 // }
-
+useEffect(()=>{
+    AOS.init({
+        
+        duration : 2000
+      });
+},[])
 function displayDetails(){
     var x = document.getElementById("education");
     // var y = document.getElementById("hobies");
@@ -56,7 +64,7 @@ function displayDetails(){
 
             </div>
             <div className="main-details" >
-                <div className="grids edu" onClick={displayDetails} ><p>Education</p>
+                <div className="grids edu" onClick={displayDetails} data-aos="fade-left"><p>Education</p>
                     <div className="aboutdetailsListClass" id="education">
                         <ul>
                             <li>Metric Bio Sci.</li>
@@ -64,7 +72,7 @@ function displayDetails(){
                             <li>BS in Computer Sci.</li>
                         </ul>
                     </div></div>
-                <div className="grids hobies" onClick={displayDetails} ><p>Hobies</p>
+                <div className="grids hobies" onClick={displayDetails} data-aos="fade-right"><p>Hobies</p>
                     <div className="aboutdetailsListClass" id="hobies">
                         <ul>
                             <li>urdu Fiction Writing </li>
@@ -72,7 +80,7 @@ function displayDetails(){
                             <li>Programming</li>
                         </ul>
                     </div></div>
-                <div className="grids Strengths" onClick={displayDetails}><p>Strengths</p>
+                <div className="grids Strengths" onClick={displayDetails} data-aos="fade-left" ><p>Strengths</p>
                     <div className="aboutdetailsListClass" id="strengths">
                         <ul>
                             <li>Dedicated</li>
@@ -80,7 +88,7 @@ function displayDetails(){
                             <li>Fst Learner</li>
                         </ul>
                     </div></div>
-                <div className="grids weekness" onClick={displayDetails} ><p>Weakness</p>
+                <div className="grids weekness" onClick={displayDetails} data-aos="fade-right"><p>Weakness</p>
                     <div className="aboutdetailsListClass" id="weekness">
                         <ul>
                             <li>introvert</li>
