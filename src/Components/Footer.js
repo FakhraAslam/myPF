@@ -5,13 +5,16 @@ const Footer = () => {
     return (<div className="footer-main">
 
         <div className="brandIcons">
-            <FontAwesomeIcon onPress={() => Linking.openURL('/https://www.facebook.com/knowlegeseekers')} className="brand_icons fb" icon={faFacebook} />
-            <FontAwesomeIcon onPress={() => Linking.openURL('/https://www.youtube.com/SeekersforSeekers')} className="brand_icons yt" icon={faYoutube} />
-            <FontAwesomeIcon onPress={() => Linking.openURL('hhttps://www.linkedin.com/in/fakhraaslam/ttps://linkedIn/in/FakhraAslam')} className="brand_icons likn" icon={faLinkedinIn} />
-            <FontAwesomeIcon onPress={() => Linking.openURL('/https://www.github.com/FakhraAslam')} className="brand_icons github" icon={faGithub} />
+            
+          
+          
+           
+           
 
-
-
+<a href="https://www.facebook.com/knowlegeseekers">  <FontAwesomeIcon  className="brand_icons fb" icon={faFacebook} /></a>
+<a href="https://www.youtube.com/SeekersforSeekers">   <FontAwesomeIcon  className="brand_icons yt" icon={faYoutube} /></a>
+<a href="https://www.linkedin.com/in/fakhraaslam/ttps://linkedIn/in/FakhraAslam"> <FontAwesomeIcon  className="brand_icons likn" icon={faLinkedinIn} /></a>
+<a href="https://www.github.com/FakhraAslam">  <FontAwesomeIcon  className="brand_icons github" icon={faGithub} /></a>
 
 
         </div>

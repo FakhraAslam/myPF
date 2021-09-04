@@ -22,7 +22,7 @@ width: 70%;
 height: 400px;
 position: absolute;
 left: 50%;
-top: 50%;
+top: 40%;
 background-size: cover;
 background-image: url(./Images/goo12.jpg);
 transform: translate(-50%,-50%);
@@ -112,7 +112,7 @@ animation: carousel 20s infinite  linear ;
   width:200px;
   right:-200px;
   text-align: left;
-  z-index: 2;
+  z-index: 3;
   transition: 1s;
  }
  
@@ -470,14 +470,29 @@ font-weight: bold;
 .projects-detail{
 display: grid;
 grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
-grid-template-columns:200px 500px;
+grid-template-columns:600px;
 grid-gap: 20px;
 justify-content: center;
+
 }
 .project-image{
+  position: relative;
 background-color: #856088;
+opacity: 1px;
+}
+.project-image h3{
+  font-size: 22px;
+  width: 90%;
+  color:white;
+  
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center; 
 }
 .project-details{
+  padding: 10px;
   background-color: #F26B8A;
  
 }
@@ -485,6 +500,15 @@ background-color: #856088;
 justify-self: center;
 width: 100%;
 height: 100%;
+}
+.main-grid2{
+
+      display: grid;
+       grid-template-rows: 200px;
+       grid-template-columns:  200px 400px;
+      grid-gap: 20px;
+      padding: 10px;
+      justify-content: center;
 }
 @media(max-width:700px){
   .projects-detail{
@@ -509,3 +533,85 @@ height: 100%;
     }
 
  }
+ /* contact*/
+ .contact_header{
+  min-height: 60vh;
+  width: 100%; 
+  background: linear-gradient(rgba(4, 8, 30, 0.7),rgb(4,9,30,0.7)),url(Images/contat.jpg);
+  background-position:center ;
+background-size: cover;
+
+  position:relative;
+
+}
+.text-box{
+  font-size: 62px;
+  width: 90%;
+  color:#fff;
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);/* transform translate actually reposition the element in horizontal or vertical position. both cordinates defines to move how much in which direction*/
+  text-align: center; /* transform aik element ko parent man k us k ander positioning krta h*/
+}
+.contact-main{
+  display: grid;
+  grid-template-rows: 250px;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 30px;
+  justify-content: center;
+ margin-top: -30px;
+ z-index: 2;
+ position: relative;
+}
+.one_con{
+  box-shadow: 0  0 20px 0px rgba(0,0,0,0.2);
+  background-color: white;
+ text-align: center;
+
+}
+.two_con{
+  box-shadow: 0  0 20px 0px rgba(0,0,0,0.2);
+  background-color: white;
+  text-align: center;
+ 
+}
+
+.help{
+  font-size: 30px;
+ color: #F26B8A;
+margin-top: 10px;
+color: #856088;
+}
+@media(max-width:700px){
+  .contact_header{
+    min-height: 40vh;
+    width: 100%; 
+    background: linear-gradient(rgba(4, 8, 30, 0.7),rgb(4,9,30,0.7)),url(Images/contat.jpg);
+    background-position:center ;
+  background-size: cover;
+  
+    position:relative;
+  
+  }
+  .text-box{
+    font-size: 42px;
+    width: 90%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+  }
+  .contact-main{
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 170px 170px;
+    grid-column-gap: 10px;
+    justify-content: center;
+   margin-top: -30px;
+   z-index: 2;
+   position: relative;
+  }
+}

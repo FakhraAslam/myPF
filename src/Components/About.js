@@ -6,48 +6,55 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 const About = () => {
-//     var elementIsClicked = false;
-//   var element = document.getElementById('eduuuuuuu');
-//     if(element!=null){
-//         elementIsClicked = true;
-//     }
 
-//     if(elementIsClicked){
-//         alert("hello");
-//         document.getElementById("aboutdetailsListId").classList.add("layor2");
-//     }
-   
-
-// let element = document.getElementsByClassName("grids");
-// let element1 = document.getElementById("grids");
-// if(element1!=null && element!=null){
-//     element1.addEventListener("mouseover", function( event ) {
-//         alert("hovered");
-//          // do what you want to do here
-//    }, false);
-// }
 useEffect(()=>{
     AOS.init({
         
         duration : 2000
       });
 },[])
-function displayDetails(){
-    var x = document.getElementById("education");
-    // var y = document.getElementById("hobies");
-    // var z = document.getElementById("strength");
-    // var a = document.getElementById("weekness");
-    
-    if(x!=null){
+function displayDetails1(){
+
+    document.querySelectorAll("#education").forEach((x)=>{
         if (x.style.display === "none") {
             x.style.display = "block";
           } else {
             x.style.display = "none";
           }
-    }
+    })
  
 }
+function displayDetails2(){
 
+    document.querySelectorAll("#hobies").forEach((x)=>{
+        if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+    })
+ 
+}function displayDetails3(){
+
+    document.querySelectorAll("#strengths").forEach((x)=>{
+        if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+    })
+ 
+}function displayDetails4(){
+
+    document.querySelectorAll("#weekness").forEach((x)=>{
+        if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+    })
+ 
+}
 
     return (
         <div className="sec">
@@ -64,32 +71,33 @@ function displayDetails(){
 
             </div>
             <div className="main-details" >
-                <div className="grids edu" onClick={displayDetails} data-aos="fade-left"><p>Education</p>
-                    <div className="aboutdetailsListClass" id="education">
+                <div className="grids edu" onClick={displayDetails1} data-aos="fade-left"><p>Education</p>
+                    <div style={{ display: "none",color:" #856088"}} id="education">
                         <ul>
                             <li>Metric Bio Sci.</li>
                             <li>Inter  ICS </li>
                             <li>BS in Computer Sci.</li>
                         </ul>
-                    </div></div>
-                <div className="grids hobies" onClick={displayDetails} data-aos="fade-right"><p>Hobies</p>
-                    <div className="aboutdetailsListClass" id="hobies">
+                    </div>
+                    </div>
+                <div className="grids hobies" onClick={displayDetails2} data-aos="fade-right"><p>Hobies</p>
+                    <div style={{ display: "none",color:" #856088"}} id="hobies">
                         <ul>
                             <li>urdu Fiction Writing </li>
                             <li>Urdu Lit. Reading</li>
                             <li>Programming</li>
                         </ul>
                     </div></div>
-                <div className="grids Strengths" onClick={displayDetails} data-aos="fade-left" ><p>Strengths</p>
-                    <div className="aboutdetailsListClass" id="strengths">
+                <div className="grids Strengths" onClick={displayDetails3} data-aos="fade-left" ><p>Strengths</p>
+                    <div style={{ display: "none",color:" #856088"}} id="strengths">
                         <ul>
                             <li>Dedicated</li>
                             <li>Coperative</li>
-                            <li>Fst Learner</li>
+                            <li>Fast Learner</li>
                         </ul>
                     </div></div>
-                <div className="grids weekness" onClick={displayDetails} data-aos="fade-right"><p>Weakness</p>
-                    <div className="aboutdetailsListClass" id="weekness">
+                <div className="grids weekness" onClick={displayDetails4} data-aos="fade-right"><p>Weakness</p>
+                    <div style={{ display: "none",color:" #856088"}} id="weekness">
                         <ul>
                             <li>introvert</li>
                         </ul>

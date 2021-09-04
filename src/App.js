@@ -20,6 +20,7 @@ function App() {
     <div className="">
       <Menu />
       <Switch>
+      <Route exact path="/" component={Carousel} />
         <Route exact path="/home" component={Carousel} />
         <Route path="/about" component={About} />
         {/* <Route path="/work" component={Work} /> */}
