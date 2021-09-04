@@ -2,10 +2,15 @@ import { useEffect } from "react";
 import {
     cart_project, covid_project, news_project, portfolio_project, todo_project, university_project, expenseTracker_project
 } from "../Images/index";
+import "aos/dist/aos.css";
+import AOS from "aos";
 const Skills = () => {
-    
+  
         useEffect(()=>{
+            AOS.init({
             
+                duration : 2000
+              });
             if (window.innerWidth < 700) {
                 // var testclasses = document.getElementsByClassName("test");
                 // if(testclasses!=null){
@@ -46,7 +51,7 @@ const Skills = () => {
             <div>
                 <h3 >Projects</h3>
                 <hr />
-                <div className="projects-detail main-techs-parent ">
+                <div className="projects-detail main-techs-parent  " data-aos="fade-up">
                     <div className=" main-grid2 test" id="one">
                         <div className="project-image "><img src={university_project} /><h3>University project</h3></div>
                         <div className="project-details"> <a href="">Project on github</a><br />
@@ -57,7 +62,7 @@ const Skills = () => {
                                 autem.</p></div>
                     </div>
 
-                    <div className=" main-grid2 test" id="two">
+                    <div className=" main-grid2 test" id="two" data-aos="fade-up">
                         <div className="project-image"><img src={expenseTracker_project} /><h3>Expence Tracker project</h3></div>
                         <div className="project-details">
                             <a href="">Project on github</a><br />
@@ -70,8 +75,8 @@ const Skills = () => {
                                  </div>
 
 
-                    <div className=" main-grid2 test" >
-                        <div className="project-image"><img src={cart_project} /><h3>Add to Cart project</h3></div>
+                    <div className=" main-grid2 test" data-aos="fade-up">
+                        <div className="project-image" ><img src={cart_project} /><h3>Add to Cart project</h3></div>
                         <div className="project-details">
                             <a href="">Project on github</a><br />
                            <a href=""> project deployed on netlify </a>
@@ -82,7 +87,7 @@ const Skills = () => {
                                 </div>
                                 </div>
 
-                    <div className=" main-grid2 test" >
+                    <div className=" main-grid2 test" data-aos="fade-up">
                         <div className="project-image"><img src={news_project} /><h3>News Blog Project</h3> </div>
                         <div className="project-details">
                             <a href="">Project on github</a><br />
@@ -94,7 +99,7 @@ const Skills = () => {
                                 </div>
                                 </div>
 
-                    <div className=" main-grid2 test" >
+                    <div className=" main-grid2 test" data-aos="fade-up">
                          <div className="project-image"><img src={covid_project} /><h3>Covid Tracker project</h3></div>
                         <div className="project-details">
                             <a href="">Project on github</a><br />
@@ -106,7 +111,7 @@ const Skills = () => {
                                 </div>
                                 </div>
 
-                    <div className=" main-grid2 test" >
+                    <div className=" main-grid2 test" data-aos="fade-up">
                         <div className="project-image"><img src={todo_project} /><h3>to-do List project</h3> </div>
                         <div className="project-details">
                             <a href="">Project on github</a><br />
@@ -118,7 +123,7 @@ const Skills = () => {
                                 </div>
                                 </div>
 
-                    <div className=" main-grid2 test" > 
+                    <div className=" main-grid2 test" data-aos="fade-up" > 
                      <div className="project-image"><img src={portfolio_project} /><h3>Port folio project</h3></div>
                         <div className="project-details">
                             <a href="">Project on github</a><br />
