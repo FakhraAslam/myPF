@@ -26,7 +26,7 @@ top: 40%;
 background-size: cover;
 background-image: url(./Images/goo12.jpg);
 transform: translate(-50%,-50%);
-animation: carousel 20s infinite  linear ; 
+animation: carousel 30s infinite  linear ; 
 /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
 }
 .headC{
@@ -147,7 +147,7 @@ animation: carousel 20s infinite  linear ;
 }
 .main h1{
   text-align: center;
-  font-size: 2.5rem;
+
 }
 .main h1::after{
   content: " "; 
@@ -182,7 +182,7 @@ justify-content: center;
 .intro {
   padding-right:0;
   color: #333; 
-
+  text-align: justify;
 }
 @media(max-width:900px){
    .row{
@@ -191,7 +191,7 @@ display: block;
   }
   .main h1{
     
-    font-size: 2rem;
+  
    align-items: center;
    margin-right: 35px;
   }
@@ -362,6 +362,12 @@ justify-content: center;
  
 }
 /* skills---------------------- */
+.mail-s{
+display: none;
+}
+.mail-L{
+  display: block;
+  }
 .main-techs{
 display: grid;
 grid-template-rows: 200px 200px 200px;
@@ -435,7 +441,7 @@ font-size: 1.2rem;
  border: 0; border-top: 2px solid #c2bfbf;
 }
 .main-techs-parent{
-  background-color: #F5F5F5;
+  background-color:rgb(247, 248, 249);
 }
 .tech-details p{
  width: 100%;
@@ -445,10 +451,15 @@ font-style: italic;
 font-weight: bold;
 }
 @media(max-width:700px){
+  .mail-L{
+    display: none;
+    }
+    .mail-s{
+      display: block;
+      }
   .skills h3{
     color: #F26B8A;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
   }
   .main-techs{
@@ -460,6 +471,7 @@ font-weight: bold;
     }
     .tech-details p{
       width: 80%;
+      text-align: justify;
      }
  .smallscr{
   width: 80%;
@@ -468,6 +480,7 @@ font-weight: bold;
 }
 /*skills_projects*/
 .projects-detail{
+ 
 display: grid;
 grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
 grid-template-columns:600px;
@@ -615,3 +628,160 @@ color: #856088;
    position: relative;
   }
 }
+.Header-home{
+  min-height: 100vh;
+  width: 100%; 
+  background: linear-gradient(rgba(4,9,30, 0.8),rgb(4,9,30,0.8)),url(Images/myphoto.jpeg);
+  background-position:center ;
+background-size: cover;
+position:relative;
+}
+.Header-home p{
+  color:#fff;
+    position:absolute;
+    top:75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+}
+.homegrid{
+  display: grid;
+  grid-template-columns: 600px 300px ;
+  grid-template-rows: 400px;
+ column-gap: 50px;
+ align-self: center;
+ width: 100%;
+}
+.Cv-grid {
+  background-color:rgb(247, 248, 249);
+  min-height: 100vh;
+  width: 100%; 
+justify-content: center;
+align-content: center;
+
+}
+.img-cv{
+ 
+  background: url(Images/resume.jpg);
+  background-size: cover;
+  
+}
+.img-result{
+  background: url(Images/result.jpg);
+  background-size: cover;
+}
+.result-grid{
+  background-color:rgb(247, 248, 249);
+  min-height: 80vh;
+  width: 100%; 
+  justify-content: center;
+align-content: center;
+}
+.des{
+  background-color: white;
+  box-shadow: 0  0 20px 2px rgba(0, 0, 0, 0.2);
+text-align: center;
+
+
+}
+.hero-btn{
+display: block;
+  text-decoration: none;
+  color:#856088;
+  border: 1px solid #856088;
+  padding: 15px 0px 15px 0px;
+  font-size: 13px;
+  background:transparent;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+ 
+  }
+  .hero-btn:hover{
+      border: 1px solid #F26B8A;
+      background:#F26B8A;
+      transition: 1s;
+  }
+  .img-cv a{
+    display: none;
+  }
+  @media(max-width:700px){
+    .text-box{
+      font-size: 35px;
+    }
+    .Header-home{
+      min-height: 60vh;
+      width: 100%; 
+      background: linear-gradient(rgba(4,9,30, 0.8),rgb(4,9,30,0.8)),url(Images/myphoto.jpeg);
+      background-position:center ;
+      background-size: cover;
+     position:relative;
+    }
+    .Header-home p{
+      color:#fff;
+        position:absolute;
+        top:75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center; 
+    }
+    .homegrid{
+      display: grid;
+      grid-template-columns: 400px  ;
+      grid-template-rows: 400px;
+     align-self: center;
+     width: 100%;
+    }
+    .Cv-grid {
+      background-color:rgb(247, 248, 249);
+      min-height: 100vh;
+      width: 100%; 
+    justify-content: center;
+    align-content: center;
+    
+    }
+    .img-cv{
+     
+      background: url(Images/resume.jpg);
+      background-size: cover;
+      text-align: center;
+   
+    }
+    .img-result{
+      background: url(Images/result.jpg);
+      background-size: cover;
+    }
+    .result-grid{
+      background-color:rgb(247, 248, 249);
+      min-height: 80vh;
+      width: 100%; 
+      justify-content: center;
+    align-content: center;
+    }
+    .des{
+      display: none;
+    }
+    .img-cv a{
+      display: block;
+    }
+    .hero-btn{
+      width: 40%;
+    display: block;
+   align-items: center;
+      text-decoration: none;
+      color:white;
+      border: 2px solid white;
+      padding: 15px;
+      font-size: 17px;
+      background:transparent;
+      cursor: pointer;
+    
+     
+     
+      }
+      .hero-btn:active{
+          border: 1px solid #F26B8A;
+          background:#F26B8A;
+          transition: 1s;
+      }
+  }

@@ -83,7 +83,7 @@ function displayDetails2(){
                 <div className="grids hobies" onClick={displayDetails2} data-aos="fade-right"><p>Hobies</p>
                     <div style={{ display: "none",color:" #856088"}} id="hobies">
                         <ul>
-                            <li>urdu Fiction Writing </li>
+                            <li>Urdu Fiction Writing </li>
                             <li>Urdu Lit. Reading</li>
                             <li>Programming</li>
                         </ul>
@@ -99,7 +99,7 @@ function displayDetails2(){
                 <div className="grids weekness" onClick={displayDetails4} data-aos="fade-right"><p>Weakness</p>
                     <div style={{ display: "none",color:" #856088"}} id="weekness">
                         <ul>
-                            <li>introvert</li>
+                            <li>Introvert</li>
                         </ul>
                     </div></div>
             </div>

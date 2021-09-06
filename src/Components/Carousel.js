@@ -16,7 +16,7 @@ const Carousel = () => {
         <img src={good20} alt="Image Not found" /> */}
         </div>
         </div>
-       
+      <div className=""> </div>
       
     </div>)
 }
