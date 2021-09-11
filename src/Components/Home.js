@@ -22,7 +22,7 @@ const Home = () => {
                 <h1 style={{textAlign:"center"}}>My Grdatuion Result </h1>
                 <p style={{textAlign:"center"}}>87% || 3.45cgpa</p>
                 <div className="result-grid homegrid">
-                <div className="img-result"><a href=" " className="hero-btn text-box">Read Resume</a></div>
+                <div className="img-result"><a href=" " className="hero-btn text-box">Read Result</a></div>
                 <div className="des"><a href=" " className="hero-btn text-box">Read Result</a></div>
                 </div>
                
