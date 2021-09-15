@@ -62,8 +62,8 @@ const Skills = () => {
                         <div className="project-details">
                             <a className="a" target="_blank" href="https://github.com/FakhraAslam/myPF.git">Project on github</a><br />
                             {/* <a href=""> project deployed on netlify </a> */}
-                            <p>This is the project "My Portfolio" which is developed with technologies React.js, JavaScript, CSS, HTML.
-                                In this project, I used raw CSS only and it is a self-done project. Here I tried to portray my skills which are basic and intermediate yet. this is my latest project and what I learnt is a little more command in CSS also I learnt about aos library
+                            <p>This is a "My Portfolio" project which is developed with technologies React.js, JavaScript, CSS, HTML.
+                                It is a self-done(didn't follow anyone) project. Here I tried to portray my skills. this is my latest project and I got little more command in CSS also I learnt about aos library.
                             </p>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ const Skills = () => {
                         <div className="project-image "><img src={university_project} /><h3>University project</h3></div>
                         <div className="project-details"> <a className="a" target="_blank" href="https://github.com/FakhraAslam/University_project.git">Project on github</a><br />
                             {/* <a href=""> project deployed on netlify </a> */}
-                            <p>This is a project "University project" which is developed with technologies little JavaScript, CSS, HTML. I did it by following the Easy tutorial from YouTube. What I learnt from this project is it enhance my CSS skills. To follow this tutorial was intended to learn CSS, which somehow got succeeded.</p></div>
+                            <p>This is a project "University project" which is developed with technologies little JavaScript, CSS, HTML. I did it by following the Easy tutorial from YouTube.It enhance my CSS skills. To follow this tutorial was intended to learn CSS, which somehow got succeeded.</p></div>
                     </div>
 
                     <div className=" main-grid2 test" id="two" data-aos="fade-up">
@@ -79,7 +79,7 @@ const Skills = () => {
                         <div className="project-details">
                             <a className="a" target="_blank" href="https://github.com/seekersforseekers/expence-tracer-practice.git">Project on github</a><br />
                             {/* <a href=""> project deployed on netlify </a> */}
-                            <p>This is a project "Expense Tracker" which is developed with technologies React JavaScript, CSS, HTML. I did it by following the Traversary Media from YouTube. This is my very first project with React. At that time it was very difficult to understand the concepts now it's easy to review the project and get an understanding of all concepts .</p>
+                            <p>This is a project "Expense Tracker" with React JavaScript, CSS, HTML. I did it by following the Traversary Media from YouTube. This is my very first project with React. At that time it was very difficult to understand the concepts now it's easy to review the project and get an understanding of all concepts .</p>
                         </div>
                     </div>
 
@@ -116,7 +116,7 @@ const Skills = () => {
                         <div className="project-details">
                             <a className="a" target="_blank" href="https://github.com/FakhraAslam/To-do.git">Project on github</a><br />
                             {/* <a href=""> project deployed on netlify </a> */}
-                            <p>This is the project "To-Do" I am using React  JavaScript, CSS, HTML. In this project, I am doing it by myself. Here I am trying to implement some to add the functionality of adding a  to-do task and at very new addition show this on the  UI with updated state, with my own UI style. This is in the implementation phase now.</p>
+                            <p>This is a "To-Do project" I am using React  JavaScript, CSS, HTML. In this project, I am doing it by myself. Here I am trying to implement functionality to add to-do task and at every new addition show this on the  UI with updated state. This is in the implementation phase now.</p>
                         </div>
                     </div>
 
