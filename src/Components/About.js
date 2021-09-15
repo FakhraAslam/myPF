@@ -63,7 +63,7 @@ function displayDetails2(){
                 <div className="row">
                     <div className=" check img"></div>
                     <div className="intro">
-                        <p>I am Fakhra.Daughter of Chaudhary Muhammad Aslam. I am a Developer and aim to work as a Full Stack developer for which currently I'm trying to pursue a vacancy for a front end associate-level developer. I live in Sialkot. I will happy to mention I love this city as it's my home town. I have done my matriculation from Govt BaraPathr Sialkot School.ICS from Nisa Girls Colleges Sialkot and Bachlores in Computer Science from Govt College Women University Sialkot </p>
+                        <p>I am Fakhra D/O Chaudhary Muhammad Aslam. I am a Developer and aim to work as a Full Stack developer for which currently I'm trying to pursue a vacancy for a front end associate-level developer. I live in Sialkot. I will happy to mention I love this city as it's my home town. I have done my matriculation from Govt BaraPathr Sialkot School.ICS from Nisa Girls Colleges Sialkot and Bachlores in Computer Science from Govt College Women University Sialkot </p>
                     </div>
 
 
@@ -80,7 +80,7 @@ function displayDetails2(){
                         </ul>
                     </div>
                     </div>
-                <div className="grids hobies" onClick={displayDetails2} data-aos="fade-right"><p>Hobies</p>
+                <div className="grids hobies" onClick={displayDetails2} data-aos="fade-right"><p>Hobbies</p>
                     <div style={{ display: "none",color:" #856088"}} id="hobies">
                         <ul>
                             <li>Urdu Fiction Writing </li>

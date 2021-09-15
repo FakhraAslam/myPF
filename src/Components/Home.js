@@ -9,7 +9,7 @@ const Home = () => {
             <div className="Cv-grid ">
                 <br/>
                 <h1 style={{textAlign:"center"}}>My Resume </h1>
-                <p style={{textAlign:"center"}}>Here is short documened discription of this website</p>
+                <p style={{textAlign:"center"}}>Here is short documented description of this website</p>
                 <div className=" Cv-grid homegrid">
                 <div className="img-cv"><a href=" " className="hero-btn text-box">Read Resume</a></div>
                 <div className="des"><a href=" " className="hero-btn text-box">Read Resume</a></div>
