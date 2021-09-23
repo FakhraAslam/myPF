@@ -92,7 +92,7 @@ function displayDetails2(){
                     <div style={{ display: "none",color:" #856088"}} id="strengths">
                         <ul>
                             <li>Dedicated</li>
-                            <li>Coperative</li>
+                            <li>Cooperatie</li>
                             <li>Fast Learner</li>
                         </ul>
                     </div></div>
